@@ -35,7 +35,7 @@ hsp = move * movespd;
 vsp += grav;
 
 // Check if on Floor and jump
-if(place_meeting(x, y + 1, obj_block_ground)){
+if(place_meeting(x, y + 1, obj_block_solid)){
 	
 	inAir = false;
 	
@@ -44,7 +44,7 @@ if(place_meeting(x, y + 1, obj_block_ground)){
 	canJump = true;
 }
 
-if(place_meeting(x, y + 1, obj_block_wall)){
+if(place_meeting(x, y + 1, obj_block_solid)){
 	
 	inAir = false;
 	
@@ -54,7 +54,7 @@ if(place_meeting(x, y + 1, obj_block_wall)){
 }
 
 // Wall Jump right
-//if(!onTheFloor && place_meeting(x - 1, y, obj_block_wall) && key_right){
+//if(!onTheFloor && place_meeting(x - 1, y, obj_block_solid) && key_right){
 //	vspd = -6;
 //	airjump -= 1;
 	
@@ -62,7 +62,7 @@ if(place_meeting(x, y + 1, obj_block_wall)){
 //}
 
 // Wall Jump left
-//if(!onTheFloor && place_meeting(x + 1, y, obj_block_wall) && key_left && !key_right){
+//if(!onTheFloor && place_meeting(x + 1, y, obj_block_solid) && key_left && !key_right){
 //	vspd = -6;
 //	airjump -= 1;
 	

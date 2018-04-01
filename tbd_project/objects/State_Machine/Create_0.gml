@@ -11,11 +11,12 @@ enum player_state{
 }
 
 ////Enemy States
-//enum enemy_state{
-//	moving,
-//	idle,
-//	patrol,
-//	attacking,
-//	hit,
-//	run
-//}
+enum enemy_state{
+	move,
+	idle,
+	patrol,
+	attack,
+	hit,
+	run,
+	inair
+}

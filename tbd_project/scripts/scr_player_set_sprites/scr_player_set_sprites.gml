@@ -8,10 +8,12 @@ if(inAir){
 	
 	image_speed = 0;
 	
-	if(sign(vsp) > 0){
+	if(sign(vsp) == 1){
 		image_index = 1;
+		log("Player in air down...(Index: " + string(image_index) +" (VSP: " + string(sign(vsp)) + ")");
 	}else{
 		image_index = 0;
+		log("Player in air up...(Index: " + string(image_index) +" (VSP: " + string(sign(vsp)) + ")");
 	}
 }else{
 
