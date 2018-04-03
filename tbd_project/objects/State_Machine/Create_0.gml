@@ -18,5 +18,6 @@ enum enemy_state{
 	attack,
 	hit,
 	run,
-	inair
+	inair,
+	dead
 }

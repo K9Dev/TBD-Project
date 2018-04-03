@@ -17,7 +17,7 @@ if(inAir){
 	}
 }else{
 
-	image_speed = 15;
+	image_speed = 1;
 	
 	if(hsp == 0){
 		scr_get_player_sprite(player_state.idle);

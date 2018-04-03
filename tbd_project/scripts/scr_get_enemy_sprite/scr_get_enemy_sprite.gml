@@ -28,5 +28,14 @@ switch(state){
 		//}
 		
 	break;
+	
+	case enemy_state.dead:
+		//if(has_weapon){
+		//	scr_draw_player_with_weapons(current_weapon, state);
+		//}else{
+			sprite_index = spr_Test_Enemy_Dead;
+		//}
+		
+	break;
 }
 

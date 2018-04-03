@@ -2,7 +2,9 @@
 // Set move dir and speed
 //hsp = movespd;
 
-hsp = 0;
+if(enemy_hp <= 0){
+	dead = true;
+}
 
 vsp += grav;
 

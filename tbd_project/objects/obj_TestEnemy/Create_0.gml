@@ -3,22 +3,19 @@
 debug = true;
 
 // Movement Vars
-hsp = 0;
+walkspeed = 3;
+hsp = enemy_test.movespeed;
 vsp = 0;
 grav = 0.5;
 
-resetMovespd = 8;
-movespd = 8;
-runspd = 12;
-jumpspd = -20;
-airjumpspd = -25;
+enemy_hp = enemy_test.hp;
+
+flash = 0;
+
+dead = false;
 
 inAir = false;
 
-airjump = 1;
-
-canjump = true;
-candash = true;
-canattack = true;
+hitfrom = 0;
 
 state = enemy_state.idle;

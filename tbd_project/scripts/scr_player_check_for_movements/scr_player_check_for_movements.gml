@@ -32,7 +32,7 @@ if(key_right){
 // Set move dir and speed
 hsp = move * movespd;
 
-vsp += grav;
+vsp = scr_check_max(vsp + grav, maxVsp);
 
 // Check if on Floor and jump
 if(place_meeting(x, y + 1, obj_block_solid)){
@@ -82,6 +82,15 @@ if(!inAir) && (key_jump){
 	vsp = jumpspd;
 	inAir = true;
 	state = player_state.inair;
+}
+
+if(key_attack){
+		
+	if(attack){
+		instance_create_layer(x, y, "Enemies", obj_bullet);
+		attack = false;
+		alarm[0] = room_speed * 0.2;
+	}
 }
 
 // Check Dash State

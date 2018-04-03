@@ -4,8 +4,8 @@
     "mvc": "1.1",
     "name": "f0050767-346e-468e-8dfc-7d44fd619d62",
     "children": [
-        "544ac976-55ef-45d5-9913-76a0e6d407fa",
-        "7a44143d-a972-466f-bc5e-c1980986cd9f"
+        "333dfcf7-e9e6-43c5-bbd9-ef64d3fdbc95",
+        "5cdeac0f-9919-4f38-9758-b99d1ed89998"
     ],
     "filterType": "GMScript",
     "folderName": "Sprite",
