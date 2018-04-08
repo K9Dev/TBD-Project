@@ -6,8 +6,9 @@ if(place_meeting(x+hsp, y, obj_block_solid)){
 	while(!place_meeting(x+sign(hsp), y, obj_block_solid)){
 		x += sign(hsp);	
 	}
-	hsp = hsp * -1;
 	
+	//hsp = hsp * -1;
+	hsp = walkspeed;
 	//log("Hsp = " + string(hsp));
 }
 

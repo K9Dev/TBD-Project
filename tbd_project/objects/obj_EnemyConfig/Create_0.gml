@@ -2,5 +2,6 @@
 
 enum enemy_test{
 	hp = 5,
-	movespeed = 2
+	movespeed = 2,
+	spawnUnits = 0
 }

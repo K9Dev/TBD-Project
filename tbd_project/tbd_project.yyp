@@ -703,11 +703,27 @@
             }
         },
         {
+            "Key": "d2628494-600f-4cc5-bb44-522780e3f380",
+            "Value": {
+                "id": "c3fe7227-9380-45f0-8a55-b6bf2643710b",
+                "resourcePath": "rooms\\Test_Room_2\\Test_Room_2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "e08c0c53-6083-44a5-9626-94b134c89b7d",
             "Value": {
                 "id": "4e8eb847-b6c6-4cbe-a711-6e64f70403fd",
                 "resourcePath": "sprites\\spr_block_cave3\\spr_block_cave3.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e6798bc3-45b7-44eb-b1e1-21f6a9dfffd3",
+            "Value": {
+                "id": "04ae32a6-570d-49fc-bac0-34594f10dc3f",
+                "resourcePath": "objects\\obj_EnemySpawner\\obj_EnemySpawner.yy",
+                "resourceType": "GMObject"
             }
         },
         {
