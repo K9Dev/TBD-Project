@@ -14,8 +14,12 @@ if(dead){
 		
 }else if(inAir){
 
-	//sprite_index = spr_Player_Air;
+
+	if(isHit){
+		return;
+	}
 	scr_get_enemy_sprite(enemy_state.inair);
+
 	//log("Set Air Sprite");
 	
 	image_speed = 0;

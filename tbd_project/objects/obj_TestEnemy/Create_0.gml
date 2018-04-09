@@ -5,7 +5,7 @@
 debug = true;
 
 // Movement Vars
-walkspeed = -3;
+walkspeed = 2;
 hsp = enemy_test.movespeed;
 vsp = 0;
 grav = 0.5;
@@ -19,5 +19,13 @@ dead = false;
 inAir = false;
 
 hitfrom = 0;
+isHit = false;
 
 state = enemy_state.idle;
+
+recoilX = enemy_test.recoilX;
+recoilY = enemy_test.recoilY;
+
+olddir = noone;
+oldhsp = hsp;
+oldvsp = vsp;

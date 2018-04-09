@@ -27,4 +27,5 @@ if(place_meeting(x, y+vsp, obj_block_solid)){
 	inAir = false;
 }
 
+
 y += vsp;
