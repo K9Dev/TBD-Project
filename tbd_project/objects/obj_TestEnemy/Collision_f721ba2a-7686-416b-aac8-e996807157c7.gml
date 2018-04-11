@@ -11,6 +11,9 @@
 	hsp = lengthdir_x(recoilX,direction);
 	vsp = lengthdir_y(recoilY,direction)-3;
 	
+	hsp = lerp(hsp, 0, .1);
+	vsp = lerp(vsp, 0, .1);
+	
 	x += hsp;
 	y += vsp;
 	

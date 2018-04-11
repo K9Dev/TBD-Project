@@ -18,10 +18,12 @@ dead = false;
 
 inAir = false;
 
+attacked = false;
+
 hitfrom = 0;
 isHit = false;
 
-state = enemy_state.idle;
+state = enemy_states.MOVE;
 
 recoilX = enemy_test.recoilX;
 recoilY = enemy_test.recoilY;

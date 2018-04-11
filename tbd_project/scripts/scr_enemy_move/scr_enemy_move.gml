@@ -24,7 +24,7 @@ if(place_meeting(x, y+vsp, obj_block_solid)){
 	}
 	
 	vsp = 0;
-	inAir = false;
+	state = enemy_states.MOVE;
 }
 
 

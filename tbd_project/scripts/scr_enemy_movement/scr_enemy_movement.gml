@@ -3,13 +3,13 @@
 //hsp = movespd;
 
 if(enemy_hp <= 0){
-	dead = true;
+	state = enemy_states.DEAD;
 }
 
 vsp += grav;
 
 if(!place_meeting(x, y + 1, obj_block_solid)){
-	inAir = true;
+	state = enemy_states.INAIR;
 }
 
 //if(place_meeting(x-10, y, obj_Player)){

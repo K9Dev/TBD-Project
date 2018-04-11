@@ -2,7 +2,7 @@
 var state = argument0;
 
 switch(state){
-	case player_state.idle:
+	case player_states.IDLE:
 		//if(has_weapon){
 		//	scr_draw_player_with_weapons(current_weapon, state);
 		//}else{
@@ -11,7 +11,7 @@ switch(state){
 		
 	break;
 	
-	case player_state.move:
+	case player_states.MOVE:
 		//if(has_weapon){
 		//	scr_draw_player_with_weapons(current_weapon, state);
 		//}else{
@@ -20,7 +20,7 @@ switch(state){
 		
 	break;
 	
-	case player_state.run:
+	case player_states.RUN:
 		//if(has_weapon){
 		//	scr_draw_player_with_weapons(current_weapon, state);
 		//}else{
@@ -29,7 +29,7 @@ switch(state){
 		
 	break;
 	
-	case player_state.inair:
+	case player_states.INAIR:
 		//if(has_weapon){
 		//	scr_draw_player_with_weapons(current_weapon, state);
 		//}else{

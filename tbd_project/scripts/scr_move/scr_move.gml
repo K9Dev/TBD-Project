@@ -19,7 +19,7 @@ if(place_meeting(x, y+vsp, obj_block_solid)){
 	}
 	
 	vsp = 0;
-	inAir = false;
+	state = prestate;
 }
 
 y += vsp;

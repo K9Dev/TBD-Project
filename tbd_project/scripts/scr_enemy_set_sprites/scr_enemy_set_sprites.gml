@@ -1,23 +1,26 @@
 // Animation
 
-if(dead){
+//if(dead){
 	
-	with(instance_create_depth(x, y, depth, obj_TestEnemyDead)){
-		direction = other.hitfrom;
-		hsp = lengthdir_x(3, direction);
-		vsp = lengthdir_y(3,direction)-2;
+//	with(instance_create_depth(x, y, depth, obj_TestEnemyDead)){
+//		direction = other.hitfrom;
+//		hsp = lengthdir_x(3, direction);
+//		vsp = lengthdir_y(3,direction)-2;
 		
-		if(sign(hsp) != 0) image_xscale = sign(hsp);
-	}
+//		if(sign(hsp) != 0) image_xscale = sign(hsp);
+//	}
 	
-	instance_destroy();
+//	instance_destroy();
 		
-}else if(inAir){
+//}else 
+
+if(state == enemy_states.INAIR){
 
 
 	if(isHit){
 		return;
 	}
+	
 	scr_get_enemy_sprite(enemy_state.inair);
 
 	//log("Set Air Sprite");
@@ -45,5 +48,6 @@ if(dead){
 if(hsp != 0){
 	image_xscale = sign(hsp);
 }
+
 
 depth = -100;

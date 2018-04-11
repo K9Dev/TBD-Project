@@ -1,6 +1,6 @@
 /// @description Insert description here
 
-debug = false;
+debug = true;
 
 controller = false;
 
@@ -9,6 +9,8 @@ gamepad_set_axis_deadzone(0, 0.2);
 // Movement Vars
 hsp = 0;
 vsp = 0;
+
+hp = 100;
 
 maxVsp = 15;
 
@@ -28,9 +30,8 @@ canjump = true;
 candash = true;
 canattack = true;
 
-attack = false;
-
-alarm[0] = room_speed * 0.2;
+attacking = true;
 
 
-state = player_state.idle;
+state = player_states.MOVE;
+prestate = state;

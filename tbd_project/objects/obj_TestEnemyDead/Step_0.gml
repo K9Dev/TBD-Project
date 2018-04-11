@@ -52,7 +52,7 @@ if(isDead){
 
 		}
 		
-		log("image Alpha: " + string(image_alpha));
+		//log("image Alpha: " + string(image_alpha));
 	}else{
 		isDead = false;
 		instance_destroy();

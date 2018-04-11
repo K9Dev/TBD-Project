@@ -1,10 +1,12 @@
+
 // Run during SHIFT
 if(key_shift){
 	movespd = runspd;
-	state = player_state.run;
+	prestate = state;
+	state = player_states.RUN;
 }else{
 	movespd = resetMovespd;
-	state = player_state.move;
+//	state = player_states.MOVE;
 }
 
 move = 0;
@@ -37,16 +39,7 @@ vsp = scr_check_max(vsp + grav, maxVsp);
 // Check if on Floor and jump
 if(place_meeting(x, y + 1, obj_block_solid)){
 	
-	inAir = false;
-	
-	// reset double jump
-	airjump = 1;
-	canJump = true;
-}
-
-if(place_meeting(x, y + 1, obj_block_solid)){
-	
-	inAir = false;
+	//state = player_states.MOVE;
 	
 	// reset double jump
 	airjump = 1;
@@ -69,8 +62,9 @@ if(place_meeting(x, y + 1, obj_block_solid)){
 //	//log("Walljump left..");
 //}
 
+
 // Double Jump
-if(inAir && airjump > 0){
+if(state == player_states.INAIR && airjump > 0){
 	if(key_jump){
 		vsp = airjumpspd;
 		airjump -= 1;
@@ -78,21 +72,29 @@ if(inAir && airjump > 0){
 }
 
 // Jump
-if(!inAir) && (key_jump){
+if(state != player_states.INAIR) && (key_jump){
 	vsp = jumpspd;
-	inAir = true;
-	state = player_state.inair;
+	prestate = state;
+	state = player_states.INAIR;
 }
+
 
 if(key_attack){
-		
-	if(attack){
+	//log("Player State changed to ATTACK");
+	//prestate = state;
+	//state = player_states.ATTACK;
+	if(attacking){
+		//log("Event ATTACK");
 		instance_create_layer(x, y, "Enemies", obj_bullet);
-		attack = false;
+		//log("Instance Bullet created");
 		alarm[0] = room_speed * 0.2;
+		attacking = false;
 	}
+	
 }
 
+
+	
 // Check Dash State
 //if(key_dash && hspd != 0 && canDash){
 //	state = player_state.dash;
@@ -104,10 +106,5 @@ if(key_attack){
 //	alarm[1] = room_speed * 1.6;
 //}
 
-// Check Attack State
-//if(key_attack && canAttack){
-//	state = player_state.attack;
-//	canAttack = false;
-//}
 
-return inAir;
+//return inAir;
