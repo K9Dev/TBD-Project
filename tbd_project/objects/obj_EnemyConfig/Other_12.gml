@@ -1,7 +1,7 @@
 /// @description State ATTACK
 //if(place_meeting(x - 3, y, obj_Player)){
 	
-	scr_enemy_state_attack();
+scr_enemy_state_attack();
 	
 	
 	
