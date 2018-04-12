@@ -12,5 +12,6 @@ enum enemy_states{
 	MOVE = 0,
 	INAIR = 1,
 	ATTACK = 2,
+	IDLE = 3,
 	DEAD = 4
 }

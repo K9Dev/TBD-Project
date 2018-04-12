@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "1bb9e6b3-59bc-4101-a87f-679a3840a05c",
+            "Value": {
+                "id": "99d4ed0a-f4f8-41bb-b88f-f755b03a6358",
+                "resourcePath": "scripts\\scr_enemy_set_sprites\\scr_enemy_set_sprites.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1eb6a775-f185-4ff8-9c3f-1f537d689905",
             "Value": {
                 "id": "d6a010c4-744f-40d6-9741-8e16ac81c6a5",
@@ -135,11 +143,27 @@
             }
         },
         {
+            "Key": "2a8e665f-f474-4db0-986a-9ac9f8f47912",
+            "Value": {
+                "id": "f19b7f97-d28e-45e8-bcee-0651b06d4829",
+                "resourcePath": "scripts\\scr_enemy_state_move\\scr_enemy_state_move.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2b9b0e68-aadb-423d-8d48-ab7127a7c323",
             "Value": {
                 "id": "d53c6616-850e-4f11-8293-ef6a2bb51eb6",
                 "resourcePath": "objects\\obj_block_cave3\\obj_block_cave3.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2fd4e36d-3290-4565-a997-1f048e38c513",
+            "Value": {
+                "id": "f46930db-cc3e-4227-b471-c06f70e6087b",
+                "resourcePath": "scripts\\scr_enemy_state_idle\\scr_enemy_state_idle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -226,7 +250,7 @@
             "Key": "4981f415-94a8-4c71-8770-1dca5923bad0",
             "Value": {
                 "id": "1fdbee79-b483-4cd9-bb8f-10c00f5f575e",
-                "resourcePath": "sprites\\sprite25\\sprite25.yy",
+                "resourcePath": "sprites\\spr_enemy_test_damage\\spr_enemy_test_damage.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -340,6 +364,14 @@
                 "id": "76227557-2c33-4825-affe-a77a315d8e9b",
                 "resourcePath": "objects\\obj_block_cave6\\obj_block_cave6.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6346a695-f2bb-4124-b198-657b1bed0d8e",
+            "Value": {
+                "id": "5feefd26-702f-4541-a7cc-e08e513976cc",
+                "resourcePath": "scripts\\scr_enemy_state_dead\\scr_enemy_state_dead.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -543,6 +575,14 @@
             }
         },
         {
+            "Key": "946a320c-87a9-4c8c-9556-550398b2ba87",
+            "Value": {
+                "id": "7d0befd7-9a3f-49b5-93d8-e58c679442f8",
+                "resourcePath": "scripts\\scr_enemy_state_attack\\scr_enemy_state_attack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "95931a73-3cec-4829-bec8-18deec088330",
             "Value": {
                 "id": "c83f1c1b-fa6e-4094-afc8-85b003f22a2e",
@@ -554,7 +594,7 @@
             "Key": "96ff6fa6-dd21-41ca-b5a5-c702dcad7844",
             "Value": {
                 "id": "a51ff4d4-3907-4a3d-af67-d1f0d463d699",
-                "resourcePath": "scripts\\scr_enemy_set_sprites\\scr_enemy_set_sprites.yy",
+                "resourcePath": "scripts\\scr_enemy_set_sprites_old\\scr_enemy_set_sprites_old.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -676,6 +716,14 @@
                 "id": "b0d98105-48fd-4a85-8a76-bdc0ad846994",
                 "resourcePath": "sprites\\spr_Test_Enemy_Move\\spr_Test_Enemy_Move.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c2f58772-716a-43ba-8b3c-55f7695afaf5",
+            "Value": {
+                "id": "47b2b1ce-fca6-46f1-9f73-96781bb3902b",
+                "resourcePath": "scripts\\scr_enemy_state_inair\\scr_enemy_state_inair.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -861,6 +909,14 @@
                 "resourcePath": "objects\\obj_block_air_ground\\obj_block_air_ground.yy",
                 "resourceType": "GMObject"
             }
+        },
+        {
+            "Key": "fe59378c-832a-41a6-91ee-5f550136079b",
+            "Value": {
+                "id": "c8b5ed0e-07a4-4f11-85de-bd4ebee768bf",
+                "resourcePath": "scripts\\scr_enemy_get_state\\scr_enemy_get_state.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
@@ -876,8 +932,15 @@
         "5a281f99-4669-4c5a-9bf8-93f6763eaf74",
         "810676bf-b9cb-42de-99c5-8e6845ac95cc",
         "96ff6fa6-dd21-41ca-b5a5-c702dcad7844",
+        "1bb9e6b3-59bc-4101-a87f-679a3840a05c",
         "681565f6-a6e8-4ad7-9a9c-bf2fc6085ca7",
-        "e7a99210-ca6c-4d82-9904-855f37190b92"
+        "e7a99210-ca6c-4d82-9904-855f37190b92",
+        "c2f58772-716a-43ba-8b3c-55f7695afaf5",
+        "2a8e665f-f474-4db0-986a-9ac9f8f47912",
+        "946a320c-87a9-4c8c-9556-550398b2ba87",
+        "6346a695-f2bb-4124-b198-657b1bed0d8e",
+        "2fd4e36d-3290-4565-a997-1f048e38c513",
+        "fe59378c-832a-41a6-91ee-5f550136079b"
     ],
     "tutorial": ""
 }

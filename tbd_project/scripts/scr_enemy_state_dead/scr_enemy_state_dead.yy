@@ -1,8 +1,8 @@
 {
-    "id": "1bb9e6b3-59bc-4101-a87f-679a3840a05c",
+    "id": "6346a695-f2bb-4124-b198-657b1bed0d8e",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_enemy_set_sprites",
+    "name": "scr_enemy_state_dead",
     "IsCompatibility": false,
     "IsDnD": false
 }

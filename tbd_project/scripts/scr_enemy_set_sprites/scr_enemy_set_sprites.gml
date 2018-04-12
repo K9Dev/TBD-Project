@@ -1,53 +1,31 @@
 // Animation
 
-//if(dead){
+switch(state){
 	
-//	with(instance_create_depth(x, y, depth, obj_TestEnemyDead)){
-//		direction = other.hitfrom;
-//		hsp = lengthdir_x(3, direction);
-//		vsp = lengthdir_y(3,direction)-2;
-		
-//		if(sign(hsp) != 0) image_xscale = sign(hsp);
-//	}
+	case enemy_states.INAIR:
+		scr_get_enemy_sprite(enemy_state.inair);
+	break; 
 	
-//	instance_destroy();
-		
-//}else 
-
-if(state == enemy_states.INAIR){
-
-
-	if(isHit){
-		return;
-	}
-	
-	scr_get_enemy_sprite(enemy_state.inair);
-
-	//log("Set Air Sprite");
-	
-	image_speed = 0;
-	
-	if(sign(vsp) > 0){
-		image_index = 1;
-	}else{
-		image_index = 0;
-	}
-}else{
-
-	image_speed = 1;
-	
-	if(hsp == 0){
-		scr_get_enemy_sprite(enemy_state.idle);
-		//log("Set Idle Sprite");
-	}else{
+	case enemy_states.MOVE:
 		scr_get_enemy_sprite(enemy_state.move);
-	}
-
+	break;
+	
+	case enemy_states.IDLE:
+		scr_get_enemy_sprite(enemy_state.idle);
+	break;
+	
+	case enemy_states.ATTACK:
+		scr_get_enemy_sprite(enemy_state.idle);
+	break;
+	
+	case enemy_states.DEAD:
+		scr_get_enemy_sprite(enemy_state.dead);
+	break; 
+	
 }
 
 if(hsp != 0){
 	image_xscale = sign(hsp);
 }
-
 
 depth = -100;

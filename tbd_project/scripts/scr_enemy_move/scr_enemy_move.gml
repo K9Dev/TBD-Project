@@ -1,4 +1,5 @@
-///scr_move();
+
+vsp += grav;
 
 // Horizontal collision
 if(place_meeting(x+hsp, y, obj_block_solid)){
@@ -7,7 +8,6 @@ if(place_meeting(x+hsp, y, obj_block_solid)){
 		x += sign(hsp);	
 	}
 	
-	//hsp = hsp * -1;
 	hsp = walkspeed;
 	//log("Hsp = " + string(hsp));
 }
@@ -24,8 +24,7 @@ if(place_meeting(x, y+vsp, obj_block_solid)){
 	}
 	
 	vsp = 0;
-	state = enemy_states.MOVE;
+	//state = enemy_states.MOVE;
 }
-
 
 y += vsp;

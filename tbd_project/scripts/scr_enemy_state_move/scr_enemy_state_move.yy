@@ -1,8 +1,8 @@
 {
-    "id": "1bb9e6b3-59bc-4101-a87f-679a3840a05c",
+    "id": "2a8e665f-f474-4db0-986a-9ac9f8f47912",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_enemy_set_sprites",
+    "name": "scr_enemy_state_move",
     "IsCompatibility": false,
     "IsDnD": false
 }
