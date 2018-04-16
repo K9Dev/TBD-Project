@@ -9,6 +9,7 @@ vsp = 0;
 grav = 0.5;
 
 enemy_hp = enemy_test.hp;
+enemy_max_hp = enemy_test.maxhp;
 
 flash = 0;
 

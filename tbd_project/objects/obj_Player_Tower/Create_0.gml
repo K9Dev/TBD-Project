@@ -1,5 +1,6 @@
 
-hp = 165;
+maxHp = 165;
+hp = maxHp;
 
 flash = 0;
 

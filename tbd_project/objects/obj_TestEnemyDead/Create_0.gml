@@ -12,9 +12,11 @@ blinked = false;
 image_speed = 0;
 
 lootTable = global.enemy_test_loot_table;	
-lootPos = random(array_length_1d(lootTable));
-		
-if(lootPos >= 0){
+lootPos = irandom(array_length_1d(lootTable));
+
+log("Loot Pos = " + string(lootPos));
+
+if(lootPos > 0){
 	lootPos--;
 }
 	

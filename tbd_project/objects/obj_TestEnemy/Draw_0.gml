@@ -9,3 +9,6 @@ if(flash > 0 && !dead){
 	shader_reset();
 }
 
+var _hp = (enemy_hp / enemy_max_hp) * 100;
+
+draw_healthbar(x - 11, y - 35, x + 11, y - 40, _hp, c_black, c_red, c_green,0, true, false)

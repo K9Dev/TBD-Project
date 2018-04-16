@@ -11,3 +11,4 @@ if(!gameover){
 
 	scr_move();
 }
+

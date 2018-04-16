@@ -9,8 +9,10 @@ if(instance_exists(follow)){
 }
 
 // Update object position
-x += (xTo - x) / 25;
-y += (yTo - y) / 25;
+x += (xTo - x) / 12;
+y += (yTo - y) / 12;
+//x += (xTo - x);
+//y += (yTo - y);
 
 
 x = clamp(x, view_w_half, room_width - view_w_half);

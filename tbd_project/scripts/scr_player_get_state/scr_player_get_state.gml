@@ -1,3 +1,8 @@
+if(fire_buff && !buffed){
+	alarm[1] = 5 * room_speed;
+	log("Firebuff enabled...");
+	buffed = true;
+}
 
 // Run during SHIFT
 if(key_shift && state != player_states.INAIR){

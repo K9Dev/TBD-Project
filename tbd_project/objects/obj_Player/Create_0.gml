@@ -12,7 +12,10 @@ gamepad_set_axis_deadzone(0, 0.2);
 hsp = 0;
 vsp = 0;
 
-hp = 100;
+
+maxHp = 100;
+
+hp = maxHp;
 
 maxVsp = 15;
 
@@ -42,6 +45,8 @@ attacking = true;
 state = player_states.IDLE;
 prestate = state;
 
+buffed = false;
+fire_buff = false;
 
 //Inventory
 coins = 0;

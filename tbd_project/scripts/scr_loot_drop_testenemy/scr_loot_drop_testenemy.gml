@@ -9,6 +9,15 @@ if(lootDrop <= 15){
 	var lootAmount = random_range(3, 6);
 	
 	for(var i = 0; i < lootAmount; i++){
+		
+		if(loot == obj_item_firestone && !instance_exists(obj_item_firestone)){	
+			instance_create_layer(x,y,"Loot", loot);
+			lootDropped = true;
+			exit;
+		}else{
+			loot = obj_coins;
+		}
+		
 		instance_create_layer(x,y,"Loot", loot);
 	}
 	
@@ -24,6 +33,14 @@ if(!lootDropped){
 	}
 	
 	for(var i = 0; i < lootAmount; i++){
+		if(loot == obj_item_firestone && !instance_exists(obj_item_firestone)){	
+			instance_create_layer(x,y,"Loot", loot);
+			lootDropped = true;
+			exit;
+		}else{
+			loot = obj_coins;
+		}
+		
 		instance_create_layer(x,y,"Loot", loot);
 	}
 	

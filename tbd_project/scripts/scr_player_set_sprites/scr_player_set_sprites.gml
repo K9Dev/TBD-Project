@@ -8,6 +8,10 @@ if(state == player_states.INAIR){
 
 if(state == player_states.MOVE){
 	sprite_index = spr_Player_Move;
+	
+	if(fire_buff){
+		sprite_index = spr_Player_Buff_Fire;
+	}
 }
 
 if(state == player_states.IDLE){
@@ -20,6 +24,10 @@ if(state == player_states.ATTACK){
 		sprite_index = spr_Player_Idle;
 	}else{
 		sprite_index = spr_Player_Move;
+	
+		if(fire_buff){
+			sprite_index = spr_Player_Buff_Fire;
+		}
 	}
 }
 

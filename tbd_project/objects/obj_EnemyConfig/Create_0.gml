@@ -1,7 +1,8 @@
 // Enemy Config
 
 enum enemy_test{
-	hp = 5,
+	hp = 56,
+	maxhp = 56,
 	movespeed = -2,
 	spawnUnits = 0,
 	recoilX = 9,
