@@ -1,6 +1,8 @@
 /// @description Insert description here
 
-debug = true;
+global.playerObj = self;
+
+gameover = false;
 
 controller = false;
 
@@ -16,10 +18,14 @@ maxVsp = 15;
 
 grav = 0.8;
 
-resetMovespd = 6;
-movespd = 6;
-runspd = 8;
-jumpspd = -14;
+flash = 0;
+
+isHit = false;
+
+resetMovespd = 5.5;
+movespd = 5.5;
+runspd = 7.5;
+jumpspd = -13;
 airjumpspd = -10;
 
 inAir = false;
@@ -33,5 +39,9 @@ canattack = true;
 attacking = true;
 
 
-state = player_states.MOVE;
+state = player_states.IDLE;
 prestate = state;
+
+
+//Inventory
+coins = 0;

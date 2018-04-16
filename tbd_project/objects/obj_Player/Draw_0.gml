@@ -30,6 +30,15 @@ if(image_xscale == 1){
 
 //draw_sprite_ext(spr_Gun, 0, x-4*flipped, y, 1, flipped, dir, image_blend, image_alpha);
 
+// Flash white
+if(flash > 0){
+
+	flash--;
+	shader_set(sh_red);
+	draw_self();
+	shader_reset();
+}
+
 
 
 depth = -100; 

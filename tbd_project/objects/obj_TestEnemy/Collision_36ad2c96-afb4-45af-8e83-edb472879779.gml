@@ -10,6 +10,9 @@ if(!attacked){
 	//damage.creator = id;
 	
 	//attacked = true;
+	global.enemyTarget = global.playerObj;
+	
+	log("Atacking Player");
 
 	state = enemy_states.ATTACK;
 }

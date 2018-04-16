@@ -1,14 +1,3 @@
-
-// Run during SHIFT
-if(key_shift){
-	movespd = runspd;
-	prestate = state;
-	state = player_states.RUN;
-}else{
-	movespd = resetMovespd;
-//	state = player_states.MOVE;
-}
-
 move = 0;
 
 if(key_left){
@@ -61,39 +50,6 @@ if(place_meeting(x, y + 1, obj_block_solid)){
 	
 //	//log("Walljump left..");
 //}
-
-
-// Double Jump
-if(state == player_states.INAIR && airjump > 0){
-	if(key_jump){
-		vsp = airjumpspd;
-		airjump -= 1;
-	}
-}
-
-// Jump
-if(state != player_states.INAIR) && (key_jump){
-	vsp = jumpspd;
-	prestate = state;
-	state = player_states.INAIR;
-}
-
-
-if(key_attack){
-	//log("Player State changed to ATTACK");
-	//prestate = state;
-	//state = player_states.ATTACK;
-	if(attacking){
-		//log("Event ATTACK");
-		instance_create_layer(x, y, "Enemies", obj_bullet);
-		//log("Instance Bullet created");
-		alarm[0] = room_speed * 0.2;
-		attacking = false;
-	}
-	
-}
-
-
 	
 // Check Dash State
 //if(key_dash && hspd != 0 && canDash){

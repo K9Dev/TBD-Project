@@ -1,6 +1,4 @@
-/// @description Insert description here
-
-
+/// @description 
 //path_start(EnemyPath, 3, path_action_restart, true);
 debug = true;
 

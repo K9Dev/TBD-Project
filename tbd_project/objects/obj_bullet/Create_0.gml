@@ -22,4 +22,4 @@ if(obj_Player.image_xscale == 1){
 	direction = 180;
 }
 
-bulletdmg = irandom_range(weapon_gun.bulletdmgmin, weapon_gun.bulletdmgmax);
+dmg = irandom_range(weapon_gun.bulletdmgmin, weapon_gun.bulletdmgmax);

@@ -19,7 +19,8 @@ if(place_meeting(x, y+vsp, obj_block_solid)){
 	}
 	
 	vsp = 0;
-	state = prestate;
+	image_speed = 1;
+	//state = prestate;
 }
 
 y += vsp;

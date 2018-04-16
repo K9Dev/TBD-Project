@@ -1,6 +1,8 @@
 
 //with(obj_bullet){
-	enemy_hp -= other.bulletdmg;
+
+	enemy_hp = scr_get_hp_after_hit(other.dmg, enemy_hp);
+	//enemy_hp -= other.dmg;
 	
 	//log("Enemy HP: " + string(enemy_hp));
 	

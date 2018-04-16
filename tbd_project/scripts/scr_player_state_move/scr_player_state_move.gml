@@ -1,1 +1,1 @@
-hsp = walkspeed * -1;
+hsp = resetMovespd * image_xscale;

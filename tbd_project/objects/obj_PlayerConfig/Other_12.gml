@@ -1,4 +1,3 @@
 /// @description State ATTACK
 
-
-//state = player_states.MOVE;
+scr_player_state_attack();

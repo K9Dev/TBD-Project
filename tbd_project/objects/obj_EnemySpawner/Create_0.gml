@@ -1,4 +1,4 @@
-spawnAmount = 10;
+spawnAmount = 0;
 spawnCount = 0;
 spawnRate = 1 * room_speed;
 

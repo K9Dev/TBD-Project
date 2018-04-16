@@ -1,2 +1,1 @@
-
 isDead = true;

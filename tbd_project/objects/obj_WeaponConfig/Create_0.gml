@@ -1,4 +1,4 @@
 enum weapon_gun{
-	bulletdmgmin = 1,
-	bulletdmgmax = 3
+	bulletdmgmin = 9,
+	bulletdmgmax = 15
 }
