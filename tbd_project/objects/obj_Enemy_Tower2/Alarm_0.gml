@@ -5,4 +5,8 @@ scr_loot_drop(self);
 var val = irandom_range(1, 1)/10;
 
 //log("Set alarm new to: " + string(val));
-alarm[0] = val * room_speed;
+if(!lootDroped){
+	alarm[0] = val * room_speed;	
+}else{
+	global.levelWon = true;
+}

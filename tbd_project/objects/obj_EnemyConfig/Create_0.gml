@@ -5,8 +5,10 @@ enum enemy_test{
 	maxhp = 56,
 	movespeed = -2,
 	spawnUnits = 0,
-	recoilX = 9,
-	recoilY = 5
+	recoilX = 6,
+	recoilY = 2,
+	minDmg = 1,
+	maxDmg = 3
 }
 
 enum enemy_states{

@@ -11,14 +11,15 @@ if(place_meeting(x - 5, y, obj_Player_Tower)){
 	return;
 }
 
-if(!place_meeting(x, y, obj_Player)){
+if(!place_meeting(x, y, obj_Player) && !place_meeting(x, y, obj_TestFriendly)){
 	state = enemy_states.MOVE;
 }else if(place_meeting(x, y, obj_Player)){
 	target = global.playerObj;
 	state = enemy_states.ATTACK;
+}else if(place_meeting(x, y, obj_TestFriendly)){
+	target = obj_TestFriendly;
+	state = enemy_states.ATTACK;
 }
-
-
 
 //else{
 //	if(hsp == 0){

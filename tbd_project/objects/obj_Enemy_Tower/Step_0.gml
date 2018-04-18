@@ -1,7 +1,7 @@
 
 if(hp <= 0){
 	
-	instance_create_depth(x, y + 60, depth, obj_Enemy_Tower2)
+	instance_create_depth(x, y + 60, depth, obj_Enemy_Tower2);
 	instance_destroy();
 }
 

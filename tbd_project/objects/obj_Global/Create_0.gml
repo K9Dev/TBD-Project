@@ -1,6 +1,7 @@
 global.debugmode = true;
 global.playerDeath = false;
 global.gameover = false;
+global.levelWon = false;
 global.playerDeathObj = noone;
 global.enemyTarget = noone;
 global.enemyTowerObj = noone;

@@ -8,7 +8,9 @@ if(place_meeting(x+hsp, y, obj_block_solid)){
 		x += sign(hsp);	
 	}
 	
-	hsp = walkspeed;
+	//hsp = walkspeed;
+	hsp = 0;
+	state = friendly_states.IDLE;
 	//log("Hsp = " + string(hsp));
 }
 
