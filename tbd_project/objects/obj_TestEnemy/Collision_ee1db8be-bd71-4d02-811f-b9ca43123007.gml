@@ -13,7 +13,7 @@
 	
 	direction = hitfrom;
 	hsp = lengthdir_x(recoilX,direction);
-	vsp = lengthdir_y(recoilY,direction)-3;
+	vsp = lengthdir_y(recoilY,direction)-6;
 	
 	hsp = lerp(hsp, 0, .1);
 	vsp = lerp(vsp, 0, .1);

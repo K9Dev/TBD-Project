@@ -5,8 +5,8 @@ enum friendly_test{
 	maxhp = 56,
 	movespeed = 2,
 	spawnUnits = 0,
-	recoilX = -6,
-	recoilY = 2,
+	recoilX = -1.5,
+	recoilY = 1,
 	minDmg = 1,
 	maxDmg = 3
 }

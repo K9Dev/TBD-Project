@@ -10,8 +10,8 @@
 	
 	hitfrom = other.direction;
 	
+	//direction = hitfrom;
 	
-	direction = hitfrom;
 	hsp = lengthdir_x(recoilX,direction);
 	vsp = lengthdir_y(recoilY,direction)-1;
 	
@@ -23,7 +23,7 @@
 	
 	isHit = true;
 	
-	direction = olddir;
+	//direction = olddir;
 	
 	alarm[0] = 0.2 * room_speed;
 	

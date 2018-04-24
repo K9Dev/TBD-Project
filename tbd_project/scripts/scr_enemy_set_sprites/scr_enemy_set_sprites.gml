@@ -29,7 +29,7 @@ switch(state){
 	
 }
 
-if(hsp != 0){
+if(hsp != 0 && !isHit){
 	image_xscale = sign(hsp);
 }
 

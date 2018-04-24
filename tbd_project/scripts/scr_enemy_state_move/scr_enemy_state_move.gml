@@ -1,1 +1,4 @@
-hsp = walkspeed * -1;
+
+if(!isHit){
+	hsp = walkspeed * -1;
+}

@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "16982d37-c505-402d-b2e4-9ffb58150b7d",
+            "Value": {
+                "id": "93885aab-dc19-4281-9f0d-0ae5631aad72",
+                "resourcePath": "objects\\obj_DisplayManager\\obj_DisplayManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1803e618-4cae-45a5-91b2-1ba05b5ab31f",
             "Value": {
                 "id": "6a00358a-a631-4a6a-a2cc-d2c5e61e65fe",
@@ -503,6 +511,14 @@
             }
         },
         {
+            "Key": "5183d92e-07e7-4835-bc99-5a65f77104e1",
+            "Value": {
+                "id": "0cdee87e-154d-461f-8c74-ef524ecbc232",
+                "resourcePath": "sprites\\spr_player_gui\\spr_player_gui.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "564c25be-cd76-4182-b39c-1f3a58ed241d",
             "Value": {
                 "id": "c9fa88a9-af13-47a6-a3c6-29e389efe275",
@@ -516,6 +532,14 @@
                 "id": "96191ab9-2bde-4e86-a725-d3d99f4aa68a",
                 "resourcePath": "objects\\obj_Player_Heathbar2\\obj_Player_Heathbar2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "569354b6-b2c2-41ff-bb04-5628add815e0",
+            "Value": {
+                "id": "1c33abcf-89c2-46bb-8c40-d02015e22aad",
+                "resourcePath": "rooms\\Display_Init\\Display_Init.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -676,6 +700,14 @@
                 "id": "043ef2a2-0a02-4c98-8b23-7903b973765e",
                 "resourcePath": "sprites\\spr_Player_Air\\spr_Player_Air.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6b834526-c74a-4e8f-bb6b-f8c198c37183",
+            "Value": {
+                "id": "0b493008-7941-481e-89a6-b958a7ec0078",
+                "resourcePath": "views\\6b834526-c74a-4e8f-bb6b-f8c198c37183.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -932,6 +964,14 @@
                 "id": "2f21068d-bb58-45ee-a1ee-a2efe45c9d8a",
                 "resourcePath": "sprites\\spr_block_cave4\\spr_block_cave4.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "908bf2f7-5861-46fc-9ba1-8ccffe9f59e9",
+            "Value": {
+                "id": "5195e984-efda-454f-b992-1cdcbb03b09f",
+                "resourcePath": "objects\\obj_player_gui\\obj_player_gui.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1423,6 +1463,14 @@
             }
         },
         {
+            "Key": "eb05c125-32ab-43a6-bcdc-d92292f9e41e",
+            "Value": {
+                "id": "8132b054-6aa3-4f95-882c-88c7ef530245",
+                "resourcePath": "views\\eb05c125-32ab-43a6-bcdc-d92292f9e41e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ed1b4000-f162-40db-a230-d7db50197cc9",
             "Value": {
                 "id": "0b0727ab-1557-4d0b-9d65-fe476b60f624",
@@ -1516,6 +1564,14 @@
                 "id": "b257612a-e006-4196-9299-fa683e9728d6",
                 "resourcePath": "objects\\obj_Enemy_Tower2\\obj_Enemy_Tower2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f59f795a-498a-4dd8-813b-a69b26dcac53",
+            "Value": {
+                "id": "febe1a6a-a81e-41ba-8bdc-a465c3f86975",
+                "resourcePath": "scripts\\scr_draw_player_gui\\scr_draw_player_gui.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1636,6 +1692,7 @@
         "24c81b95-8105-43e5-b187-9ed672b54fa4",
         "c575a66c-6023-4272-9d50-d274a04e8dfb",
         "d8f2ca0e-9a6b-49fe-9188-d44ae6f9d36f",
+        "f59f795a-498a-4dd8-813b-a69b26dcac53",
         "d022a158-48b4-43b8-96be-7fdf729cf7dc",
         "aeb51880-c6cd-4fdd-a9ec-8a0f900a2783",
         "5cdeac0f-9919-4f38-9758-b99d1ed89998",
