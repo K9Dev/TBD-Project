@@ -24,7 +24,7 @@
 	
 	direction = olddir;
 	
-	alarm[0] = 3 * room_speed;
+	alarm[0] = 0.3 * room_speed;
 	
 	log("Enemy HP: " + string(enemy_hp));
 

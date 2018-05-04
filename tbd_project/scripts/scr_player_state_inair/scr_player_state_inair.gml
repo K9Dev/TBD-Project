@@ -1,5 +1,7 @@
 //vsp = jumpspd;
 
+movespd = resetMovespd;
+
 // Double Jump
 if(!place_meeting(x, y + 1, obj_block_solid)){
 	if(airjump > 0){

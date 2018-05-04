@@ -1,3 +1,9 @@
+if(hp <= 0){
+	log("Player death");
+	state = player_states.DEAD;
+	return;
+}
+
 if(fire_buff && !buffed){
 	alarm[1] = 5 * room_speed;
 	log("Firebuff enabled...");
@@ -26,12 +32,6 @@ if(place_meeting(x, y + 1, obj_block_solid)){
 
 if(key_attack){
 	state = player_states.ATTACK;
-	return;
-}
-
-if(hp <= 0){
-	log("Player death");
-	state = player_states.DEAD;
 	return;
 }
 

@@ -5,7 +5,7 @@ if(!instance_exists(obj_Enemy_Tower)) exit;
 
 draw_health = lerp(draw_health, player.hp, 0.6);
 
-vX = global.guiEnemyX + 6;
+vX = global.guiX + 6;
 vY = global.guiYBars + 6;
 
 depth = -1001;

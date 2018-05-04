@@ -34,3 +34,4 @@ surface_resize(application_surface, idealWidth, idealHeight);
 window_set_size(idealWidth, idealHeight);
 
 room_goto_next();
+

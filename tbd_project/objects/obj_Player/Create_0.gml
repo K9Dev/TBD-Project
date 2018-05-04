@@ -28,7 +28,7 @@ isHit = false;
 resetMovespd = 5.5;
 movespd = 5.5;
 runspd = 7.5;
-jumpspd = -13;
+jumpspd = -12;
 airjumpspd = -10;
 
 inAir = false;

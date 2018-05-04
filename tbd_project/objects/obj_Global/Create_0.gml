@@ -22,3 +22,6 @@ global.guiYBars = 0;
 global.guiPlayerX = 0;
 global.guiPlayerTowerX = 0;
 global.guiEnemyX = 0;
+
+global.idealH = window_get_height();
+global.idealW = window_get_width();

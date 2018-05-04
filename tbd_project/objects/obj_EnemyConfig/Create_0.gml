@@ -6,7 +6,7 @@ enum enemy_test{
 	movespeed = -2,
 	spawnUnits = 0,
 	recoilX = 1.5,
-	recoilY = 1,
+	recoilY = 2,
 	minDmg = 1,
 	maxDmg = 3
 }
