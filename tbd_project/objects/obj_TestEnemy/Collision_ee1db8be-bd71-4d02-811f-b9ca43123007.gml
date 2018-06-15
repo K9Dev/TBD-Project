@@ -1,7 +1,12 @@
 
 //with(obj_bullet){
+var otherDmg = other.dmg;
 
-	enemy_hp = scr_get_hp_after_hit(other.dmg, enemy_hp);
+	with(instance_create_depth(x,y, -1000, obj_Damage_Popup)){
+		dmgToDisplay = otherDmg;
+	}
+
+	enemy_hp = scr_get_hp_after_hit(otherDmg, enemy_hp);
 	//enemy_hp -= other.dmg;
 	
 	//log("Enemy HP: " + string(enemy_hp));

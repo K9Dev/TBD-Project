@@ -12,9 +12,9 @@ global.guiX = (display_get_gui_width() / 2) - 250;
 global.guiY = display_get_gui_height() - 40;
 global.guiYBars =  global.guiY + 9;
 
-log("X: " + string(global.guiX));
-log("Y: " + string(global.guiY));
-log("YB: " + string(global.guiYBars));
+//log("X: " + string(global.guiX));
+//log("Y: " + string(global.guiY));
+//log("YB: " + string(global.guiYBars));
 
 var guiX = global.guiX;
 var guiY = global.guiY;

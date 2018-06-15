@@ -20,11 +20,11 @@ x = clamp(x, view_w_half, room_width - view_w_half);
 y = clamp(y, view_h_half, room_height - view_h_half);
 
 if(death_sizeW < camera_get_view_width(cam)){
-	startW -= startW / 130;
+	startW -= startW / 150;
 } 
 	
 if(death_sizeH < camera_get_view_height(cam)){
-	startH -= startH / 130;
+	startH -= startH / 150;
 }
 
 if(startW < death_sizeW){

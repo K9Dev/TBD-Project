@@ -1,5 +1,11 @@
 move = 0;
 
+// Open Character Info
+if(key_character_info){
+	global.characterInfoOpen = !global.characterInfoOpen;
+}
+
+
 if(key_left){
 	move = -1;
 }else if(key_left_released){

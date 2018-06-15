@@ -8,7 +8,8 @@ enum enemy_test{
 	recoilX = 1.5,
 	recoilY = 2,
 	minDmg = 1,
-	maxDmg = 3
+	maxDmg = 3,
+	experience = 23
 }
 
 enum enemy_states{

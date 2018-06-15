@@ -28,3 +28,43 @@ var windowHeight = window_get_height();
 	//draw_text(200, 490,"Player Move:  = " + string(move));
 	
 	//draw_text(200, 520,"Player State:  = " + string(state));
+
+
+if(global.characterInfoOpen){
+	
+	var windowW = windowWidth-(windowWidth / 1.2);
+	var windowH = windowHeight-(windowHeight / 1.3);
+	
+	
+	draw_sprite_ext(spr_Player_Character_Info, 0, windowW, windowH, 1, 1, 0, c_white, image_alpha);
+	
+	draw_set_font("Consolas");
+	
+	var charName = string(obj_Player_Stats.playerName);
+	var charRace = string(obj_Player_Stats.playerRace);
+	var charClass = string(obj_Player_Stats.playerClass);
+	
+	var charLvl = string(obj_Player_Stats.playerLvl);
+	var charExp = string(obj_Player_Stats.playerExp) + " / " + string(obj_Player_Stats.playerMaxExp);
+	
+	var charHp = string(obj_Player.hp) + "/" + string(obj_Player_Stats.HP);
+	var charSTR = string(obj_Player_Stats.STR);
+	var charDEF = string(obj_Player_Stats.DEF);
+	var charCrit = string(obj_Player_Stats.critChance) + "%";
+	var charCritDmg = "x" + string(obj_Player_Stats.critMultiplier);
+	var charLuck = string(obj_Player_Stats.luck) + "%";
+	
+	draw_text_color(windowW + 63, windowH + 15, charName, c_lime, c_lime, c_green, c_green, image_alpha);
+	draw_text_color(windowW + 63, windowH + 33, charRace, c_lime, c_lime, c_green, c_green, image_alpha);
+	draw_text_color(windowW + 63, windowH + 51, charClass, c_lime, c_lime, c_green, c_green, image_alpha);
+	
+	draw_text_color(windowW + 63, windowH + 87, charLvl, c_lime, c_lime, c_green, c_green, image_alpha);
+	draw_text_color(windowW + 63, windowH + 105, charExp, c_lime, c_lime, c_green, c_green, image_alpha);
+	
+	draw_text_color(windowW + 88, windowH + 141, charHp, c_lime, c_lime, c_green, c_green, image_alpha);
+	draw_text_color(windowW + 88, windowH + 158, charSTR, c_lime, c_lime, c_green, c_green, image_alpha);
+	draw_text_color(windowW + 88, windowH + 175, charDEF, c_lime, c_lime, c_green, c_green, image_alpha);
+	draw_text_color(windowW + 88, windowH + 193, charCrit, c_lime, c_lime, c_green, c_green, image_alpha);
+	draw_text_color(windowW + 88, windowH + 211, charCritDmg, c_lime, c_lime, c_green, c_green, image_alpha);
+	draw_text_color(windowW + 88, windowH + 229, charLuck, c_lime, c_lime, c_green, c_green, image_alpha);
+}

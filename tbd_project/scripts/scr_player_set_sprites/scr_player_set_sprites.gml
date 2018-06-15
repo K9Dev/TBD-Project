@@ -16,12 +16,20 @@ if(state == player_states.MOVE){
 
 if(state == player_states.IDLE){
 	sprite_index = spr_Player_Idle;
+	
+	if(fire_buff){
+		sprite_index = spr_Player_Idle_Buff_Fire;
+	}
 }
 
 if(state == player_states.ATTACK){
 	
 	if(hsp == 0){
 		sprite_index = spr_Player_Idle;
+		
+		if(fire_buff){
+			sprite_index = spr_Player_Idle_Buff_Fire;
+		}
 	}else{
 		sprite_index = spr_Player_Move;
 	

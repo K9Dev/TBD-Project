@@ -5,9 +5,18 @@ if(hp <= 0){
 }
 
 if(fire_buff && !buffed){
-	alarm[1] = 5 * room_speed;
+	alarm[1] = obj_Player_Buffs.fireBuffDuration * room_speed;
 	log("Firebuff enabled...");
 	buffed = true;
+	
+	obj_Player_Stats.STR += obj_Player_Buffs.fireBuffStr;
+}
+
+if(resetAlarm){
+	alarm[1] = obj_Player_Buffs.fireBuffDuration * room_speed;
+	log("Reset Firebuff...");
+	
+	resetAlarm = false;
 }
 
 // Run during SHIFT

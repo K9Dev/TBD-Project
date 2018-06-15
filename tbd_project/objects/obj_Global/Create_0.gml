@@ -1,4 +1,4 @@
-global.debugmode = true;
+global.debugmode = false;
 global.playerDeath = false;
 global.gameover = false;
 global.levelWon = false;
@@ -25,3 +25,5 @@ global.guiEnemyX = 0;
 
 global.idealH = window_get_height();
 global.idealW = window_get_width();
+
+global.characterInfoOpen = false;

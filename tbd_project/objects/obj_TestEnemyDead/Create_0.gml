@@ -27,3 +27,6 @@ scr_loot_drop(self);
 
 alarm[0] = room_speed * 2;
 
+obj_Player_Stats.playerExp += enemy_test.experience;
+	
+

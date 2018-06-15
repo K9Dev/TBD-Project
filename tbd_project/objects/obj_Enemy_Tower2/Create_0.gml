@@ -17,3 +17,5 @@ loot = lootTable[lootPos];
 lootDrop = random(50);
 
 alarm[0] = 0.1 * room_speed;
+
+obj_Player_Stats.playerExp += 80;

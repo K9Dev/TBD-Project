@@ -1,5 +1,7 @@
 /// @description Insert description here
 
+log("Player Created");
+
 global.playerObj = self;
 
 gameover = false;
@@ -13,7 +15,7 @@ hsp = 0;
 vsp = 0;
 
 
-maxHp = 100;
+maxHp = obj_Player_Stats.HP;
 
 hp = maxHp;
 
@@ -45,6 +47,7 @@ attacking = true;
 state = player_states.IDLE;
 prestate = state;
 
+resetAlarm = false;
 buffed = false;
 fire_buff = false;
 

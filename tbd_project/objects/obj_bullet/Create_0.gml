@@ -22,4 +22,9 @@ if(obj_Player.image_xscale == 1){
 	direction = 180;
 }
 
-dmg = irandom_range(weapon_gun.bulletdmgmin, weapon_gun.bulletdmgmax);
+if(scr_is_critical(obj_Player_Stats.critChance)){
+	dmg = obj_Player_Stats.STR + irandom_range(weapon_gun.bulletdmgmin, weapon_gun.bulletdmgmax);
+	dmg = dmg * obj_Player_Stats.critMultiplier;
+}else{
+	dmg = obj_Player_Stats.STR + irandom_range(weapon_gun.bulletdmgmin, weapon_gun.bulletdmgmax);
+}

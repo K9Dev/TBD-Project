@@ -9,6 +9,8 @@ key_shift = keyboard_check(vk_shift);
 key_attack = mouse_check_button(mb_left);
 key_attack_pressed = mouse_check_button(mb_left);
 
+key_character_info = keyboard_check_pressed(ord("C"));
+
 if(key_left || key_right || key_jump || key_dash || key_shift || key_attack || key_attack_pressed){
 	controller = false;
 }
